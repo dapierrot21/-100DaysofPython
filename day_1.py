@@ -29,7 +29,7 @@ print("Hello " + input("what is your name?"))
 
 
 # Excerise 3
-# input() replace the string inside with what is type from user, then that string is than counted one characther at a time and return that amount of characthers to print to display.
+# input() function replace the string inside with what is type from the user, then that string is counted one characther at a time by the len() which also returns that amount of characthers to print to display.
 print(len(input("what is your first name")))
 
 
