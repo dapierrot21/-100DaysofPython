@@ -66,3 +66,19 @@ print(f"{total_amount}")
 # 4. 10 - 3 = 7.0 : print(7.0)
 # Output: 7.0
 print(3 * 3 + 3 / 3 - 3)
+
+
+# Excerise 2
+# 🚨 Don't change the code below 👇
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+w = int(weight)
+h = float(height)
+
+# The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m):
+bmi = w / (h**2) 
+
+print(int(bmi))
