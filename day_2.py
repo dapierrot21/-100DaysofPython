@@ -75,10 +75,8 @@ weight = input("enter your weight in kg: ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-w = int(weight)
-h = float(height)
 
 # The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m):
-bmi = w / (h**2) 
+bmi = int(weight) / (float(height) ** 2) 
 
 print(int(bmi))
