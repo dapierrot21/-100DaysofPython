@@ -80,3 +80,48 @@ weight = input("enter your weight in kg: ")
 bmi = int(weight) / (float(height) ** 2) 
 
 print(int(bmi))
+
+# Number Manipulation and F Strings in Python
+
+# Floor Division
+print(type(8 // 3))
+
+# F String
+score = 0
+height = 1.8
+isWinning = True
+
+print(f"Your score is {score}, your height is {height}, Did you win? {isWinning}!")
+
+
+# Exercise 3
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+# how many yrs we have left until 90 yrs old.
+years = 90 - int(age) 
+
+# Then take that number and multipily 
+months = round(years * 12)  # 12(months in a year)
+weeks = round(years * 52) # 52(weeks in a year)
+days = round(years * 365) # 365(days in a year)
+
+print(f"You have {days} days, {weeks} weeks, and {months} months left.")
+
+
+# Tip Calculator
+print("Welcome to your tip calculator.")
+
+bill_total = float(input("What was the total bill?\n$"))
+percentage_tip = int(input("What percentage tip would you like to give? 10, 12, or 15?\n"))
+bill_split = int(input("How many people will split this bill?\n"))
+
+new_per_tip = percentage_tip / 100
+bill_total_with_tip = bill_total * new_per_tip
+new_bill = bill_total + bill_total_with_tip
+bill_per_person = new_bill / bill_split
+
+print("Each person should pay: ${:.2f}".format(round(bill_per_person, 2)))
