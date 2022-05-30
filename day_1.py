@@ -1,4 +1,4 @@
-# Excerise 1
+# Exercise 1
 print("Day 1 - Python Print Function")
 print("The function is declared like this:")
 print("print('what to print')")
@@ -9,7 +9,7 @@ print("Day 1 - Python Print Function\nThe function is declared like this:\nprint
 # Combinig String
 print("Hello" + " Dean")
 
-# Excerise 2
+# Exercise 2
 # Fix code below
 # print(Day 1 - String Manipulation")
 # print("String Concatenation is done with the "+" sign.")
@@ -28,13 +28,13 @@ print(name)
 print("Hello " + input("what is your name?"))
 
 
-# Excerise 3
+# Exercise 3
 # input() function replace the string inside with what is type from the user, then that string is counted one characther at a time by the len() which also returns that amount of characthers to print to display.
 print(len(input("what is your first name")))
 
 
 
-# Excerise 4
+# Exercise 4
 # 🚨 Don't change the code below 👇
 a = input("a: ")
 b = input("b: ")

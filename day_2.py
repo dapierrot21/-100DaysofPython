@@ -22,7 +22,7 @@ print(type(1 == 1))
 print(type(str(1)))
 print(type(int("123")))
 
-# Excerise 1
+# Exercise 1
 
 # 🚨 Don't change the code below 👇
 two_digit_number = input("Type a two digit number: ")
@@ -68,7 +68,7 @@ print(f"{total_amount}")
 print(3 * 3 + 3 / 3 - 3)
 
 
-# Excerise 2
+# Exercise 2
 # 🚨 Don't change the code below 👇
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
