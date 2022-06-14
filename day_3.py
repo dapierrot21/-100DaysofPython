@@ -10,7 +10,7 @@
 number = int(input("Which number do you want to check? "))
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 
 if number % 2 == 0:
     print("This is an even number.")
@@ -29,28 +29,31 @@ if height >= 120:
     print("You can ride. Enjoy!")
     age = int(input("How old are you?\n"))
     if age >= 18:
-        photo = input("Do you want to purchase photos with your ticket? Yes or No\n").lower()
+        photo = input(
+            "Do you want to purchase photos with your ticket? Yes or No\n").lower()
         if photo == 'yes':
             total_cost = 12 + 3
             print(f"Your total amount to pay is {total_cost}.")
         else:
             print("You need to pay $12.")
     elif age <= 18:
-        photo = input("Do you want to purchase photos with your ticket? Yes or No\n").lower()
+        photo = input(
+            "Do you want to purchase photos with your ticket? Yes or No\n").lower()
         if photo == 'yes':
             total_cost = 7 + 3
             print(f"Your total amount to pay is {total_cost}.")
         else:
             print("You will need to pay $7.")
     elif age < 12:
-        photo = input("Do you want to purchase photos with your ticket? Yes or No\n").lower()
+        photo = input(
+            "Do you want to purchase photos with your ticket? Yes or No\n").lower()
         if photo == 'yes':
             total_cost = 5 + 3
             print(f"Your total amount to pay is {total_cost}.")
         else:
             print("You will need to pay $5.")
     elif age >= 45 and age <= 55:  # Logical Operators
-        photo = input( "Do you want to purchase photos? Yes or No\n").lower()
+        photo = input("Do you want to purchase photos? Yes or No\n").lower()
         if photo == 'yes':
             total_cost = 3
             print(f"Your total amount to pay is {total_cost}.")
@@ -69,7 +72,7 @@ height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 bmi = round(int(weight) / (float(height) ** 2))
 
 if bmi < 18.5:
@@ -84,14 +87,12 @@ else:
     print(f"Your BMI is {bmi}, you are clinically obese.")
 
 
-
-
 # Exercise 3 - Leap Year
 # 🚨 Don't change the code below 👇
 year = int(input("Which year do you want to check? "))
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 
 if year % 4 == 0:
     if year % 100 == 0:
@@ -113,12 +114,12 @@ add_pepperoni = input("Do you want pepperoni? Y or N ").lower()
 extra_cheese = input("Do you want extra cheese? Y or N ").lower()
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 total = 0
 
 if size == 's':
     total += 15
-elif size == 'm':
+if size == 'm':
     total += 20
 else:
     total += 25
@@ -139,7 +140,7 @@ name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 
 one_long_string = name1 + name2
 one_long_lowercase_string = one_long_string.lower()
@@ -173,14 +174,18 @@ else:
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right".').lower()
+choice1 = input(
+    'You\'re at a cross road. Where do you want to go? Type "left" or "right".').lower()
 
 if choice1 == 'left':
-    left = input('You come to a lake. There is a island in the middle of the lake. Type "wait" for a boat. Type "swim" to swim across.').lower()
+    left = input(
+        'You come to a lake. There is a island in the middle of the lake. Type "wait" for a boat. Type "swim" to swim across.').lower()
     if left == 'wait':
-        wait = input('You arrive at the island unharmed. There is a house with 3 doors. One "red", one "yellow", and one "blue". Which color do you choose?').lower()
+        wait = input(
+            'You arrive at the island unharmed. There is a house with 3 doors. One "red", one "yellow", and one "blue". Which color do you choose?').lower()
         if wait == 'red':
-            print("You enter the room with a guy pointing a ray gun at you. ZAP!. Game Over! ")
+            print(
+                "You enter the room with a guy pointing a ray gun at you. ZAP!. Game Over! ")
         elif wait == 'yellow':
             print("You enter the room and its so bright with shiny gold coins. YOU FOUND THE TREASURE!!!!. You Won!!!!")
         elif wait == 'blue':
@@ -188,7 +193,8 @@ if choice1 == 'left':
         else:
             print("Sorry that color sent you to a gate way to the sun. Game Over!")
 elif choice1 == 'right':
-    pill = input('You enter the matrix. Choose a pill a "red" or "blue"').lower()
+    pill = input(
+        'You enter the matrix. Choose a pill a "red" or "blue"').lower()
     if pill == 'red':
         print("Embrace the sometimes painful truth of reality. Your free now.")
     elif pill == 'blue':
@@ -197,4 +203,3 @@ elif choice1 == 'right':
         print("Your trapped in a void.")
 else:
     print("Wrong choice. You will be sent back to the fortnite.")
-
